@@ -26,6 +26,7 @@ SECRET_KEY = 'gyf0&nh%39vvax_upub7bfy-x2fz*$0@c2!vcjfj3zhp%ch$u9'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'fathomless-brook-97491.herokuapp.com'
 ]
 
 
