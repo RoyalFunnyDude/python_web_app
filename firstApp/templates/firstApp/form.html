@@ -1,0 +1,19 @@
+{% extends "firstApp/base.html" %} {% block main %}
+<form action="../greet/" method="POST">
+  {% csrf_token %}
+  <label>Firstname: </label>
+  <input type="text" name="fName" />
+  <br />
+  <label>Lastname: </label>
+  <input type="text" name="lName" />
+  <br />
+  <button type="submit">Submit</button>
+</form>
+
+<h1>List of People on the Website</h1>
+<ol>
+  {% for person in persons %}
+  <li>{{ person.firstName }}</li>
+  {% endfor %}
+</ol>
+{% endblock %}

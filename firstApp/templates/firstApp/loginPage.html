@@ -1,0 +1,7 @@
+{% extends "firstApp/base.html" %} {% block main %}
+<h1>This is my Login Page</h1>
+{% if loggedIn %}
+<h3>Your are authorized</h3>
+{% else %}
+<h3>Your are not authorized</h3>
+{% endif %} {% endblock %}

@@ -1,0 +1,10 @@
+{% extends "firstApp/base.html" %} {% block main %}
+<h1>This is my Apps cool Websites page</h1>
+<ol>
+  {% for each in websites %}
+  <li>
+    <a href="{{each.1}}">{{ each.0 }}</a>
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}
