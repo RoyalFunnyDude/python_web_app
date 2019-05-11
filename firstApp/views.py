@@ -28,14 +28,7 @@ def contact(request):
 
 
 def cool_websites(request):
-    data_dict = {}
-    data_dict['data_passed'] = 'Data Passed'
-    websites = []
-    websites.append(['Google', 'https://www.google.com'])
-    websites.append(['Amazon', 'https://www.amazon.com'])
-    websites.append(['Microsoft', 'https://www.microsoft.com'])
-    data_dict['websites'] = websites
-    return render(request, 'firstApp/coolWebsites.html', data_dict)
+    return render(request, 'firstApp/coolWebsites.html')
 
 
 def name_form(request):

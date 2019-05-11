@@ -1,12 +1,3 @@
 {% extends "../firstApp/base.html" %} {% block main %}
-<form action="../greet/" method="POST">
-    {% csrf_token %}
-    <label>Firstname: </label>
-    <input type="text" name="fName" />
-    <br />
-    <label>Lastname: </label>
-    <input type="text" name="lName" />
-    <br />
-    <button type="submit">Submit</button>
-</form>
+
 {% endblock %}

@@ -1,10 +1,144 @@
 {% extends "firstApp/base.html" %} {% block main %}
-<h1>This is my Apps cool Websites page</h1>
-<ol>
-  {% for each in websites %}
-  <li>
-    <a href="{{each.1}}">{{ each.0 }}</a>
-  </li>
-  {% endfor %}
-</ol>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Surviv.io</h1>
+    <p class="lead">Surviv.io is a free browser based multiplayer online battle royale game released in October
+      2017. Similar to other titles in the genre, players battle against other players on a large map from a
+      top-down perspective, scavenging for supplies and weapons. The game also supports two or four player
+      team modes, and can be played on mobile browsers as well.</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="http://surviv.io" role="button">Link to Game</a>
+  </div>
+</div>
+
+<!-- gameplay -->
+<nav id="navbar-tactics" class="navbar navbar-inverse">
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#gameplay">Gameplay</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">Tricks and Tactics</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#rules">General Rules</a>
+        <div role="separator" class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#start">Starting</a>
+        <a class="dropdown-item" href="#loot">Looting</a>
+        <a class="dropdown-item" href="#skin">Skins</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<div data-spy="scroll" data-target="#navbar-tactics" data-offset="0">
+  <div class="container">
+    <h2 id="gameplay">Gameplay</h2>
+    <p>Players are represented by circular figures on a 2D grid-like playing field, surrounded by a circular
+      "red zone" that shrinks as the game progresses. Players start with only their fists, while extra gear
+      such as armor, backpacks and weapons can be found across the map in crates, houses and other buildings.
+      Weapons range from close range shotguns and SMGs to long range assault rifles, and grenades. Scopes can
+      be found that give players a wider view of their surroundings.</p>
+  </div>
+  <br>
+  <div class="container">
+    <h2>Tricks and Tactics</h2>
+    <ol>
+      <h4 id="rules">General Rules</h4>
+      <ul>
+        <li>Always scroll to swich weapons. Reload weapons when not fighting or healing.</li>
+        <li>Pick up everything that you can except for weapons and skins.</li>
+      </ul>
+      <br>
+      <h4 id="start">Starting</h4>
+      <ul>
+        <li>When you spawn, go immediately to the nearest building, box, bunker, or container. Pick up the
+          items inside as fast as possible, and move on. It is very easy at this stage to get killed with
+          fists, since most of the battle will happen in close quarters.</li>
+        <li>Avoid combat zones, and practice using the controls quickly. Remember: <strong>SPEED IS
+            KEY</strong>!</li>
+        <li>Start punching boxes right before you reach them: there is a small delay after you hit and the
+          box becoming smaller.</li>
+        <li>Avoid fistfights, since the winner of a fistfight depend on the device that you are using.</li>
+      </ul>
+      <br>
+      <h4 id="loot">Looting</h4>
+      <ul>
+        <li>Always look around and heal before looting! You never know if somebody is sniping at you.</li>
+        <li>Reload weapons and move around constantly while looting. These little tricks may just save your
+          life one day.</li>
+        <li>
+          <h6>Order of Looting</h6>Scope > Armor > Medicine > Weapons > Ammunition > Skin
+        </li>
+      </ul>
+      <h4 id="skin">Skins</h4>
+      <ul>
+        <li>Skins can sometimes help, but other times, it may affect how you play negatively.</li>
+        <li>Some good skins are: Ghillie Suit, Forest Camo, Woodland Combat, and The Professional. These
+          skins will either help you blend into the background, or make you look like a pro.</li>
+      </ul>
+    </ol>
+  </div>
+  <div class="container">
+    There are a few play styles that most players often align with. They depend on loadouts, gear, and how the
+    player performs in the game. Of course, you may play as multiple of these types of styles, or none at all.
+    These aren't here to instruct you that you MUST do one of these; they're just here to inform you of the
+    different types of play styles.
+    <ul>
+      <li>Sniper — This is simple to learn but hard to master. Basically stay far away, with at least a 4x
+        Scope. Arm yourself (anything will do, but a Mosin Nagant, MK 12 SPR, M39 EMR, SV-98 or AWM-S) is
+        preferable for their range, damage, accuracy and bullet speed). That's all there is to it. Stay away
+        from everyone, and if they chase you, run while taking cover. Note that you can see farther to the
+        sides of your characters than above and below. When fighting someone with a smaller scope than you,
+        take advantage of their limited vision and shoot at them from above or below them, instead of to the
+        sides. Further, take advantage of the environment by shooting barrels and ovens, destroying cover,
+        or shooting people as they go for loot.</li>
+      <li>Medic — Go around the map collecting various medical supplies (ex. Pills, Soda, Bandage, and Med
+        Kit) and drop these items for your team or random players that you find on the map. Smoke Grenades
+        are also useful to carry as a medic in order to cause distractions, get out of sticky situations, or
+        to heal a teammate.</li>
+      <li>Gunner — Get a fast firing gun (ex. MAC-10, MP5, M416, or Vector). Now you have choices. 1. Charge
+        like a savage and just hold down the fire button in the general direction of the enemy and hope they
+        die before you do. 2. Hide around a corner, under the table, in some smoke, the vault, etc. and when
+        they come close, unleash the bullets. 3. Fight them normally.</li>
+      <li>Close Range — Get a shotgun (M870, MP220, Saiga-12 or Vector) and target starters or Snipers. Don't
+        fight gunners if possible as they will overwhelm you with bullets. Snipers have a slow rate of fire,
+        so get them right after they shoot. Starters don't have weapons except for fists, so if they come
+        close, shoot them, and otherwise for kills, don't chase them as it is a waste of time.</li>
+      <li>Melee — Use your Fists or a Melee Weapon (Knives or Wood Axe) and get Sodas, Pills and maybe Smoke
+        Grenades, if you know how to use them correctly. Be extremely cautious while fighting Gunners and
+        Shot-gunners and try to dodge their bullets, using the speed from adrenaline to your advantage to
+        close the distance to attack them with your fists or melee weapons. Snipers are easier to fight, as
+        they only fire one bullet at a time. Not advisable for new players.</li>
+      <li>Passive — Get a few weapons (preferably close range), then go to the middle of the map. Hide in a
+        bush and stay there. If the play zone changes move inside and then hide. Keep waiting until there
+        are only a few enemies left — There will be a plenty of leftover loots. Get them without being
+        detected. Avoid combat as long as possible — The ideal situation is that you finish off the last
+        remaining player when they are vulnerable after combat. This is a very good playstyle for those who
+        are not confident and/or those who just want to get to the high rank at all costs. This may be very
+        boring, so having something else to work on while hiding in the bushes might help.</li>
+      <li>Guerrilla — This technique is similar to passive, but a little more offensive. It involves hiding,
+        but also involves attacking at the right time. You need to find a good spot to hide, especially in
+        bushes or overlapping trees. If you are a good player, hide under tables or other stuff in the
+        Mansion, Barn, or House. When you see someone coming you attack, with full force. whatever gun you
+        use doesn't particularly matter, but it's better to use a small SMG or just an automatic weapon,
+        like the MP5 or the MAC-10, because they have nice fire rates, and don't stick out of a bush while
+        you're hiding. Another way, which requires a bit of finesse, is smoking a grenade for about 5
+        and-a-half seconds, and then jumping out of the bushes when an enemy is near. If the grenade is
+        thrown correctly, you can end up injuring and/or killing at least one opponent. If not, then you
+        might die. (Note: This works especially well in close quarters, like in houses with bushes, because
+        the enemy has nowhere to run.)
+      </li>
+      <li>Demolition Man — In this tactic, you must use mainly grenades to attack your enemies and smoke
+        grenades to hide and confuse an enemy. Cooking grenades are vital in this playstyle as once you
+        weaken your victim you can go in for the kill using a weapon of high power such as the SV-98 or an
+        M870 or a weapon of high fire rates such as the MAC-10 or Vector. Always hide in bushes typically
+        in-house bushes for a more limited area to escape for your enemy.</li>
+      <li>Border Patrol — Useful late game. If someone is looting in the red zone or fighting in the red zone,
+        go to that area and shoot at them while staying in the save zone. The massive damage and your
+        bullets will most likely cause them to die. However, their loot will be in the red zone.</li>
+    </ul>
+  </div>
+</div>
 {% endblock %}
